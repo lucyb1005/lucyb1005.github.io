@@ -1,0 +1,185 @@
+html {
+	background-color: #F9F5EB;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Fields';
+  line-height: 1.4;
+}
+
+/* TOP NAV CONTENT */
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #03C988;
+}
+
+/* PORTFOLIO BEGINS HERE */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-logo {
+	padding: 0 0 0 200px;
+}
+
+.site-navigation {
+	font-size: 12px;
+	display: flex;
+	gap: 80px;
+	padding: 0 200px 0 0;
+	text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .site-navigation {
+    display: none;
+  }
+
+  #hamburger-icon {
+  	display: block;
+  	text-align: right;
+  }
+}
+
+@media (min-width: 1100px) {
+	#hamburger-icon {
+		display: none;
+	}
+}
+
+.hamburger-menu {
+	padding: 0 200px 0 0;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu {
+	background-color: white;
+	display: none;
+	padding: 15px;
+	position: absolute;
+	top:60px;
+	width:100px;
+	z-index: 10;
+}
+
+.dropdown-menu#menu-1 {
+	left: 190px;
+}
+
+.menu-item-list {
+	margin: 0;
+	padding-left: 0;
+}
+
+.menu-item-list li a,
+.menu-item-list li a:visited,
+.menu-item-list li a: focus {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.menu-item-list li a:hover {
+	background-color: white;
+	color: blue;
+}
+
+
+/* TOP INTRO CONTENT */
+.nav {
+	justify-content: center;
+	align-items: center;
+}
+
+.introduction {
+	padding: 80px 0 80px 0;
+	font-size: 30px;
+	display: block;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+/* MAIN CONTENT */
+.paris-text {
+	padding: 50px 0 0 200px;
+	text-align: left;
+	line-height: 0.5;
+	font-size: 10px;
+}
+
+.title {
+
+}
+
+.subtitle {
+	text-transform: uppercase;
+}
+
+.photography-container {
+	display: flex;
+	gap: 30px;
+	padding: 30px 200px 50px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.photography-container img {
+	max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+.paris-text{
+	padding: 50px 200px 0 200px;
+	line-height: 1.2;
+}
+.photography-container {
+	display: block;
+	}
+}
+
+/* FOOTER CONTENT */
+/* Check-in this part -- I want to have the flower logo be in the middle when it's max-width:1100px 
+but it's not working? 
+@media (max-width: 1100px) {
+	.flower-logo {
+		display: block;
+		align-items: center;
+	}
+
+	.copy-text {
+		display: none;
+	}
+}
+*/
+
+.site-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 200px 50px 200px;
+}
+
+.flower-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+}

@@ -1,0 +1,237 @@
+html {
+	background-color: #F9F5EB;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Fields';
+  line-height: 1.4;
+}
+
+/* LANDING PAGE CONTENT */
+.landing-page {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 90px 0 0 0;
+}
+
+.contact-button {
+	background: #03C988;
+	color: white;
+	font-size: 20px;
+	font-weight: 350;
+	cursor: pointer;
+	margin: 10px auto;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.contact-button:hover {
+	background-color: #539165;
+	color: white;
+	transition: background-color .5s ease-in-out;
+}
+
+.password-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+/* TOP NAV CONTENT */
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #03C988;
+}
+
+/* PORTFOLIO BEGINS HERE */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-logo {
+	padding: 0 0 0 200px;
+}
+
+.site-navigation {
+	font-size: 12px;
+	display: flex;
+	gap: 80px;
+	padding: 0 200px 0 0;
+	text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .site-navigation {
+    display: none;
+  }
+
+  #hamburger-icon {
+  	display: block;
+  	text-align: right;
+  }
+}
+
+@media (min-width: 1100px) {
+	#hamburger-icon {
+		display: none;
+	}
+}
+
+.hamburger-menu {
+	padding: 0 200px 0 0;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu {
+	background-color: white;
+	display: none;
+	padding: 15px;
+	position: absolute;
+	top:60px;
+	width:100px;
+	z-index: 10;
+}
+
+.dropdown-menu#menu-1 {
+	left: 190px;
+}
+
+.menu-item-list {
+	margin: 0;
+	padding-left: 0;
+}
+
+.menu-item-list li a,
+.menu-item-list li a:visited,
+.menu-item-list li a: focus {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.menu-item-list li a:hover {
+	background-color: white;
+	color: blue;
+}
+
+
+/* TOP INTRO CONTENT */
+.nav {
+	justify-content: center;
+	align-items: center;
+}
+
+.introduction {
+	padding: 80px 0 80px 0;
+	font-size: 30px;
+	display: block;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.green-color {
+	color: #03C988;
+}
+
+.hiddenimg {
+	display: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+	display: block;
+	position: absolute;
+	top: 150px;
+	left: 1040px;
+		z-index: -100;
+}
+
+.hiddenimg2 {
+	display: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg2 {
+	display: block;
+	position: absolute;
+	top: 300px;
+	left: 250px;
+		z-index: -100;
+}
+
+.resume-spin {
+	width: 200px;
+	height: 200px;
+	animation: resumespin 7s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes resumespin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+/* MAIN CONTENT */
+
+.photography-container {
+	display: grid;
+	flex-direction: row;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	padding: 30px 200px 50px;
+}
+
+.photography-container img {
+	max-width: 100%;
+}
+
+/*scrolling text*/
+
+.contact-me {
+	font-size: 20px;
+	padding: 30px 0 30px 0;
+	text-transform: uppercase;	
+	color: #03C988;
+}
+
+
+/* FOOTER CONTENT */
+.site-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 200px;
+  font-weight: 300;
+}
+
+.home-logo {
+	padding-right: 80px;
+}
+
+.emoji {
+	display: flex;
+	gap: 20px;
+  width: 20px;
+  height: 20px;
+  justify-content: flex-end;
+}
