@@ -19,6 +19,7 @@ a:link {
 
 a:hover {
 	color: #03C988;
+	font-weight: 400;
 }
 
 /* PORTFOLIO BEGINS HERE */
@@ -40,6 +41,12 @@ header {
 	text-transform: uppercase;
 }
 
+.site-navigation h3:hover {
+	color: #03C988;	
+	font-weight: 400;
+	cursor: pointer;
+}
+
 @media (max-width: 1100px) {
   .site-navigation {
     display: none;
@@ -57,11 +64,11 @@ header {
 	}
 }
 
+/* DROPDOWN MENU */
 .hamburger-menu {
 	padding: 0 200px 0 0;
 }
 
-/* DROPDOWN MENU */
 .dropdown-menu {
 	display: none;
   background-color: rgba(255, 255, 255, 0.8);
@@ -72,12 +79,12 @@ header {
 }
 
 .dropdown-menu#menu-1 {
-  left: 790px;
+  left: 810px;
   padding: 0;
 }
 
 .menu-item-list li a,
-.menu-item-list li a:visited,
+.menu-item-list li a:hover,
 .menu-item-list li a:focus {
   color: #454545;
   display: block;
@@ -111,6 +118,68 @@ a {
 	color: #03C988;
 	font-weight: 400;
 }
+
+/* OFF CANVAS MENU CONTENT */
+.side-menu-position {
+	padding-top: 25px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.side-menu-design {
+	background-color: #F9F5EB;
+	background-size: 1300px 700px;
+  background-repeat: repeat;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.4s ease-in-out;
+}
+
+.side-menu-header {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 50px 20px 25px;  
+}
+
+.go-back-index {
+	padding-left: 30px;
+	font-size: 28px;
+}
+
+.side-menu-content {
+  color: black;
+  font-size: 24px; 
+  margin: 25px;
+  padding-left: 30px;
+}
+
+.small-side-text {
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.side-menu-content li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.side-menu-content li a:hover {
+	color: #03C988;
+	font-weight: 400;
+}
+
+.show-menu {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
 
 /* TOP INTRO CONTENT */
 .about-content {
@@ -153,6 +222,13 @@ a {
 .photography-container {
 	display: block;
 	padding: 50px;
+	}
+}
+
+@media (min-width: 1085px) {
+	.hamburger-menu {
+		display: block;
+		cursor: pointer;
 	}
 }
 
@@ -232,16 +308,6 @@ a {
 	padding-left: 200px;
 }
 
-
-@media (max-width: 1100px) {
-.hamburger-menu {
-	padding-right: 50px;
-}
-
-.nav-logo {
-	padding: 50px;
-} 
-}
 
 @media (max-width: 1100px) {
 	.flower-logo {

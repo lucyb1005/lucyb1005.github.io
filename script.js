@@ -1,11 +1,23 @@
-//DROPDOWN//
-const button = document.getElementById("menu-button");
-const menuList = document.getElementById("menu-1");
+ //DROPDOWN//
+document.getElementById("menu-button").onclick = function() {showMenu()};
+ function showMenu() {
+   document.getElementById("menu-1").classList.toggle("show");
+ }
 
-button.addEventListener("click", displayMenuOne);
 
-function displayMenuOne() {
-  menuList.classList.add("show");
+
+//SIDEMENU//
+const hambaguButton = document.getElementById("hamburger-icon");
+hambaguButton.addEventListener("click", displaySideMenu);
+const sideMenu = document.getElementById("side-menu");
+
+function displaySideMenu() {
+  sideMenu.classList.add("show-menu");
 }
 
-document.addEventListener("click", hideMenu)
+const closeMenu = document.getElementById("menu-close");
+closeMenu.addEventListener("click", hideSideMenu);
+
+function hideSideMenu() {
+  sideMenu.classList.remove("show-menu");
+} 

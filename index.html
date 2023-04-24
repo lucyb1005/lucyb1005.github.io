@@ -30,26 +30,43 @@
 		<h1><a href="index.html">Lucy Baik</a></h1>
 	</div>
 	<div class="hamburger-menu" id="hamburger-icon"> 
-			<img src="images/hamburger-icon.svg">
+			<img src="images/hamburger-icon.svg" alt="hamburger icon">
 		</div>
 	<div class="site-navigation">
- 		<h3 id="menu-button">series</h3>
+ 		<h3 id="menu-button" class="change-color">series</h3>
  		<h3><a href="https://lucybaik.com/">design</a></h3>
-		<h3><a href="">film</a></h3>
+		<h3><a href="film.html">film</a></h3>
 		<h3><a href="about.html">about</a></h3>
 	</div>
 
 <!-- dropdown menu --> 
-	<aside class="dropdown-menu" id="menu-1">
+<aside class="dropdown-menu" id="menu-1">
   <ul class="menu-item-list">
-    <li><a href="japan_2023.html">Tokyo 2023</a></li>
+    <li><a href="japan_2023.html">Japan 2023</a></li>
     <li><a href="korea_2023.html">Korea 2023</a></li>
     <li><a href="paris_2022.html">Paris 2022</a></li>
   </ul>
 </aside>
 	</header>
 
-<!-- main content --> 
+<!-- side menu -->
+<aside class="side-menu-position side-menu-design" id="side-menu">
+  <header class="side-menu-header">
+  	<h1 class="go-back-index"><a href="index.html">Lucy Baik</a></h1>
+    <img src="images/close-icon.png" alt="close this menu" id="menu-close" width=50px; height=50px;>
+  </header>
+  <ul class="side-menu-content">
+    <li>Series</li>
+    <li class="small-side-text"><a href="japan_2023.html">Japan 2023</a></li>
+    <li class="small-side-text"><a href="korea_2023.html">Korea 2023</a></li>
+    <li class="small-side-text"><a href="paris_2022.html">Paris 2022</a></li>
+    <li><a href="https://lucybaik.com/">Design</a></li>
+    <li><a href="film.html">Film</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</aside>
+
+<!-- main menu --> 
 <main class="photography-container">
   <div><img src="images/main-1.jpg"></div>
   <div><img src="images/main-4.jpg"></div>
@@ -65,7 +82,7 @@
 <!-- footer --> 
 <footer class="site-footer">
 	<div class="footer-content">
-		<a href="portfolio.html"><img class="flower-logo" src="images/flower.png"></a>
+		<a href="index.html"><img class="flower-logo" src="images/emoji.png"></a>
 		<p class="copy-text">&copy; 2023 Lucy Baik</p>
 	</div>
 </footer>

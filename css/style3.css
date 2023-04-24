@@ -1,0 +1,45 @@
+/* MAIN CONTENT */
+.main-text {
+	padding: 50px 0 0 200px;
+	text-align: left;
+	line-height: 1.3;
+	font-size: 10px;
+}
+
+.subtitle {
+	text-transform: uppercase;
+}
+
+.photography-container3 {
+	background-color: none;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px 500px 250px 250px 250px;
+    grid-row-gap: 10px;
+    padding: 20px 200px 50px 200px;
+}
+
+.photography-container3 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* MEDIA CONTENT */
+@media (max-width: 1100px) {
+.nav-logo {
+	padding: 50px;
+}
+
+.hamburger-menu {
+	padding-right: 50px;
+}
+
+.main-text{
+	padding: 50px;
+	line-height: 1.2;
+}
+.photography-container3 {
+	display: block;
+	padding: 50px;
+	}
+}
